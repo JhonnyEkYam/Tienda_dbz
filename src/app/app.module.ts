@@ -14,7 +14,7 @@ import { ContactMeComponent } from './components/contact-me/contact-me.component
     HeaderComponent,
     FooterComponent,
     InfoComponent,
-    ContactMeComponent
+    ContactMeComponent,
   ],
   imports: [
     BrowserModule,
