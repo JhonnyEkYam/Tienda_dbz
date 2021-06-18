@@ -1,0 +1,68 @@
+.banner-container{
+    height: 100vh;
+    background: var(--background-color);
+    position: absolute;
+    left: 0;
+    right: 0;
+    
+}
+.img-container{
+    position: fixed;
+    background: var(--background-color);
+    width: 100vw;
+}
+.img-container .date{
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    color: var(--light-color);
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+}
+.img-container img{
+    width: 100%;
+}
+
+
+.info-container{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color);
+    position: fixed;
+    bottom: 0;
+    z-index: 7;
+}
+.see-products{
+    width: max-content;
+    padding: .5rem 2rem;
+    position: absolute;
+    top: 0;
+    right: 3em;
+    height: 2rem;
+    background-color: var(--buttons-color);
+    transform: translateY(-1rem);
+    -webkit-transform: translateY(-1rem);
+    -moz-transform: translateY(-1rem);
+    -ms-transform: translateY(-1rem);
+    -o-transform: translateY(-1rem);
+    color: var(--background-secondary-color);
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 25px;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+
+.star img{
+    fill: var(--dark-color);
+    width: 100px;
+}
