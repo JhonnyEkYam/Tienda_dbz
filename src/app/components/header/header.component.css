@@ -4,7 +4,7 @@ header{
     top: 0;
     left: 0;
     right: 0;
-    height: 6rem;
+    min-height: 6rem;
     padding: .6em;
 
     background: var(--background-color);
@@ -25,11 +25,12 @@ header *{
 
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     height: 4rem;
 }
 .main-header .logo{
-    
+    flex: 1 1 auto;
     max-height: 100%;
     font-size: 2rem;
     font-weight: 700;
@@ -42,6 +43,7 @@ header *{
     border: 2px solid var(--dark-text-color);
     padding: .5rem;
     display: grid;
+    flex: 1 1 auto;
     gap: .5rem;
     grid-template-columns: min-content 1fr min-content;
     border-radius: 4rem;
@@ -102,4 +104,20 @@ nav .nav-bar li:not(:last-child){
 nav .nav-bar li a{
     text-decoration: none;
     color: var(--light-color);
+}
+
+@media screen and (max-width: 800px){
+    header,
+    .logo h5,
+    .main-header,
+    nav,
+    .nav-bar{
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .logo h5{
+        display: flex;
+    }
 }
