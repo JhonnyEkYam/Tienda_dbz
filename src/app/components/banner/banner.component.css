@@ -1,15 +1,11 @@
 .banner-container{
     height: 100vh;
     background: var(--background-color);
-    position: absolute;
-    left: 0;
-    right: 0;
-    
 }
 .img-container{
-    position: fixed;
+    /* position: fixed; */
     background: var(--background-color);
-    width: 100vw;
+    /* width: 100vw; */
 }
 .img-container .date{
     position: absolute;
@@ -31,7 +27,7 @@
 
 
 .info-container{
-    width: 100vw;
+    /* width: 100vw; */
     height: 12rem;
     display: grid;
     padding-left: 2rem;
@@ -40,15 +36,14 @@
     justify-content: left;
     gap: 2rem;
     background-color: var(--background-color);
-    position: fixed;
-    bottom: 0;
+    /* position: fixed;
+    bottom: 0; */
     z-index: 7;
 }
 .see-products{
     width: max-content;
     padding: .5rem 2rem;
     position: absolute;
-    top: 0;
     right: 3em;
     height: 2rem;
     background-color: var(--buttons-color);
