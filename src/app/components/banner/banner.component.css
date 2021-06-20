@@ -3,13 +3,18 @@
     background: var(--background-color);
 }
 .img-container{
-    /* position: fixed; */
+    /*position: fixed;
+    */
     background: var(--background-color);
-    /* width: 100vw; */
+    
+    /*width: 100vw;
+    */
+    
 }
 .img-container .date{
     position: absolute;
-    left: 0px;
+    left: 0px;  
+    z-index: 2;
     top: 50%;
     color: var(--light-color);
     text-decoration: none;
@@ -23,6 +28,8 @@
 }
 .img-container img{
     width: 100%;
+    filter: brightness(.5);
+    -webkit-filter: brightness(.5);
 }
 
 
@@ -82,7 +89,7 @@
     display: flex;
     justify-content: center;
     flex: 3 3 100%;
-    padding: 1rem 2rem;
+    padding-top: 2rem;
 }.social-media .social-icon{
     flex: 0 1 4rem;
 }.social-icon img{
