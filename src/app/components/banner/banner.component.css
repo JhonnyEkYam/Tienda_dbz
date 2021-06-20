@@ -1,21 +1,28 @@
 .banner-container{
     height: 100vh;
     background: var(--background-color);
+    display: grid;
+    grid-template-rows: 60% 40%;
+    position: sticky;
+    top: 0;
 }
 .img-container{
     /*position: fixed;
     */
-    background: var(--background-color);
+    /* background: var(--background-color); */
+    background-image: url("/assets/dragon-ball-z-extreme-butoden-banner.webp");
+    background-size: cover;
     
+    position: relative;
     /*width: 100vw;
     */
     
 }
 .img-container .date{
     position: absolute;
-    left: 0px;  
+    left: -3rem;  
     z-index: 2;
-    top: 50%;
+    bottom: 30%;
     color: var(--light-color);
     text-decoration: none;
     font-weight: 600;
@@ -35,10 +42,13 @@
 
 .info-container{
     /* width: 100vw; */
-    height: 12rem;
-    display: grid;
+    /* min-height: 12rem; */
+    display: flex;
     padding-left: 2rem;
-    grid-template-columns: min-content max-content;
+    grid-template-columns: min-content max-content,
+                            min-content max-content;
+    grid-template-rows: max-content max-content;
+
     align-items: stretch;
     justify-content: left;
     gap: 2rem;
@@ -83,6 +93,7 @@
     gap: 1rem;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: start;
 }.social-media .description{
     color: var(--dark-color);
     font-size: 2rem;
