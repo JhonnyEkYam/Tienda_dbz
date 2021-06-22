@@ -1,0 +1,61 @@
+.scroll-btns-container{
+    --margin: .75rem;
+    --size: 2.5rem;
+    z-index: 999;
+    position: fixed;
+    bottom: var(--margin);
+    right: var(--margin);
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--margin);
+    width: var(--size);
+}
+.scroll-btn{
+    width: 100%;
+    flex: 1 1 var(--size);
+    border: 2px solid var(--dark-color);
+    background: rgba(255, 255, 255, .15);
+    display: flex;
+    place-content: center;
+    place-items: center;
+    cursor: pointer;
+    transition: .2s ease-out;
+    -webkit-transition: .2s ease-out;
+    -moz-transition: .2s ease-out;
+    -ms-transition: .2s ease-out;
+    -o-transition: .2s ease-out;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.scroll-btn:hover{
+    scale: 1.1;
+    background: rgba(209, 209, 209, 0.205);
+}
+
+.scroll-btn .arrow{
+    --constant: .4;
+    height: calc(var(--size) * var(--constant));
+    width: calc(var(--size) * var(--constant));
+    
+    border-top: 2px solid var(--dark-color);
+    border-left: 2px solid var(--dark-color);
+}
+
+.scroll-btn.up .arrow{
+    transform: rotate(45deg)  translateX(15%) translateY(15%);
+    -webkit-transform: rotate(45deg)  translateX(15%) translateY(15%);
+    -moz-transform: rotate(45deg)  translateX(15%) translateY(15%);
+    -ms-transform: rotate(45deg)  translateX(15%) translateY(15%);
+    -o-transform: rotate(45deg)  translateX(15%) translateY(15%);
+}
+.scroll-btn.down .arrow{
+    transform: rotate(225deg)  translateX(15%) translateY(15%);
+    -webkit-transform: rotate(225deg)  translateX(15%) translateY(15%);
+    -moz-transform: rotate(225deg)  translateX(15%) translateY(15%);
+    -ms-transform: rotate(225deg)  translateX(15%) translateY(15%);
+    -o-transform: rotate(225deg)  translateX(15%) translateY(15%);
+}
