@@ -26,7 +26,7 @@
     color: var(--light-color);
     text-decoration: none;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 17px;
     transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
@@ -110,9 +110,19 @@
 }.social-icon img{
     width: 100%;
 }
+@media screen and (max-width: 800px) {
+    .img-container .date{
+        font-size: 14px;
+    }
+}
 
 @media screen and (max-width: 470px) {
     .social-media .container{
         justify-content: left;
     } 
+
+    .img-container .date{
+        font-size: 12px;
+        
+    }
 }
