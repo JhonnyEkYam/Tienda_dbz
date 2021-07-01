@@ -9,6 +9,7 @@ import { InfoComponent } from './components/info/info.component';
 import { ContactMeComponent } from './components/contact-me/contact-me.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { ScrollButtonsComponent } from './components/scroll-buttons/scroll-buttons.component';
+import { ProductsComponent } from './components/products/products.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ScrollButtonsComponent } from './components/scroll-buttons/scroll-butto
     InfoComponent,
     ContactMeComponent,
     BannerComponent,
-    ScrollButtonsComponent
+    ScrollButtonsComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,

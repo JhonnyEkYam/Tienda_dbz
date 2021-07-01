@@ -1,0 +1,21 @@
+.main-container{
+    padding: 3rem 0;
+    position: relative;
+    min-height: 250px;
+    background: var(--background-color);
+
+}
+.title{
+    width: 100%;
+    display:flex;
+    place-content: center;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+}
+
+
+
