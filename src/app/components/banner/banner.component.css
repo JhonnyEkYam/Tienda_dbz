@@ -85,7 +85,7 @@
     align-items: center;
 }.star img{
     fill: var(--dark-color);
-    width: 7rem;
+    width: 5rem;
 }
 
 .info-container .social-media {
@@ -109,6 +109,25 @@
     flex: 0 1 2.5rem;
 }.social-icon img{
     width: 100%;
+}
+
+.login-container{
+    margin-top: 30px;
+    margin-right: 20px;
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}.login-container input{
+    padding-left: 5px;
+}
+.login-container button{
+    width: 8em;
+    height: 1.8em;
+    background-color: var(--buttons-color);
+    color: var(--background-secondary-color);
+    border: none;
+
 }
 @media screen and (max-width: 800px) {
     .img-container .date{
