@@ -123,10 +123,14 @@
 }
 .login-container button{
     width: 8em;
-    height: 1.8em;
+    height: 8em;
     background-color: var(--buttons-color);
     color: var(--background-secondary-color);
     border: none;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
 
 }
 @media screen and (max-width: 800px) {

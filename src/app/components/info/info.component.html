@@ -1,4 +1,13 @@
 <div class="main-container">
+
+    <ul class="users-container">
+        <button (click)="httpRequestUsers()">Ver usuarios</button>
+        <li *ngFor="let user of usersData">
+            <span class="badge">{{user.user_id}}</span> {{user.user}} ({{user.email}})
+        </li>
+    </ul>
+
+
     <div class="sub-container">
 
         <div class="card who-we-are">
@@ -7,10 +16,10 @@
             </h4>
             <p>
                 Somos una tienda en línea con los mejores productos
-                de Dragon Ball, Dragon Ball Z, Dragon Ball Super y 
+                de Dragon Ball, Dragon Ball Z, Dragon Ball Super y
                 otros lanzamientos de Dragon Ball no canónicos como
                 Dragon Ball GT.
-                Nos dedicamos a ofrecer a nuestros usuarios una 
+                Nos dedicamos a ofrecer a nuestros usuarios una
                 experiencia inigualable en cuando a Dragon Ball se trata
             </p>
         </div>
@@ -26,7 +35,8 @@
                     <a href="#" class="service-item">Sagas completas en su versión DVD o BluRay!</a>
                 </li>
                 <li>
-                    <a href="#" class="service-item">Los mejores videojuegos más vendidos en todo el mundo para toda clase de consolas y dispositivos!</a>
+                    <a href="#" class="service-item">Los mejores videojuegos más vendidos en todo el mundo para toda
+                        clase de consolas y dispositivos!</a>
                 </li>
                 <li>
                     <a href="#">Peluches</a>
@@ -38,7 +48,7 @@
             <a href="#" class="see-products">Ver productos</a>
         </div>
     </div>
-    
-        <span class="star"></span>
-        <span class="star"></span>
+
+    <span class="star"></span>
+    <span class="star"></span>
 </div>

@@ -8,7 +8,6 @@ import { UserHttpServiceService } from '../../user-http-service.service';
   styleUrls: ['./banner.component.css']
 })
 export class BannerComponent implements OnInit {
-
   constructor(private router:Router, private service:UserHttpServiceService) { }
 
   ngOnInit(): void {
@@ -19,8 +18,4 @@ export class BannerComponent implements OnInit {
     const token = query.data.token;
     localStorage.setItem("token", token);
   }
-  public async httpRequestUsers(){
-    const query = await this.service.getUsers({});
-    const users = query.data.data.data;  }
-
 }
